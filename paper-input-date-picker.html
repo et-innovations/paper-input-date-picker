@@ -321,6 +321,7 @@ Example:
     
     _showDialog: function() {
       this.$picker.date = (this.value) ? this.value : new Date();
+      document.querySelector("body").appendChild(this.$.dialog);
       this.$.dialog.toggle();
     },
 
